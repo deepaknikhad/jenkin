@@ -20,7 +20,6 @@ public class UITest
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-	     // driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.get("https://www.facebook.com/");
 		Assert.assertTrue(driver.getTitle().contains("Facebook – log in or sign up"), "Title does not match");		
 		driver.quit();
